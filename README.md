@@ -1,29 +1,23 @@
-# NASA Mission Control Project
+# NASA-Space-Launch-App
+ 
+Nasa space launch app is used to schedule launches to habitable exoplanets.The data for the exoplanets is taken from https://exoplanetarchive.ipac.caltech.edu/docs/data.html. This app filters out the habitable exoplanets from collection of exoplanets based on planetary radius and effective stellar flux.
 
-The completed version of our NASA project from [Complete Node.js Developer: Zero to Mastery](https://academy.zerotomastery.io/p/learn-node-js?affcode=441520_1jw4f2ay).
+There is a upcoming section which lists all the future launches.We can abort future launches and remove them from upcoming section. The history section consists of all completed as well as aborted launches.It also consists of past launches executed by SpaceX. The data for launches is taken from https://github.com/r-spacex/SpaceX-API.
 
-Keep in mind that we recommend you code along with us and use this only if you ever get stuck or you don't like to code along.
+## Screenshots
 
-## Getting Started
+![2023-04-15 (6)](https://user-images.githubusercontent.com/103110193/232184592-baa9cd69-e1b7-4941-9ed4-1cd998a167a3.png)
 
-1. Ensure you have Node.js installed.
-2. Create a free [Mongo Atlas](https://www.mongodb.com/atlas/database) database online or start a local MongoDB database.
-3. Create a `server/.env` file with a `MONGO_URL` property set to your MongoDB connection string.
-4. In the terminal, run: `npm install`
+![2023-04-15 (5)](https://user-images.githubusercontent.com/103110193/232184599-cd10695b-446e-494d-ba05-867cf84b4936.png)
 
-## Running the Project
+![2023-04-15 (9)](https://user-images.githubusercontent.com/103110193/232184637-4485ef86-97b6-4784-928f-206477bf6144.png)
 
-1. In the terminal, run: `npm run deploy`
-2. Browse to the mission control frontend at [localhost:8000](http://localhost:8000) and schedule an interstellar launch!
+![2023-04-15 (7)](https://user-images.githubusercontent.com/103110193/232184642-0b937db4-0e80-4d25-990e-860fb62dae48.png)
 
-## Docker
+![2023-04-15 (8)](https://user-images.githubusercontent.com/103110193/232184650-66bd8c21-957a-4bb1-a0af-868bcaa86e4e.png)
 
-1. Ensure you have the latest version of Docker installed
-2. Run `docker build -t nasa-project .`
-3. Run `docker run -it -p 8000:8000 nasa-project`
+### Tech Stack
 
-## Running the Tests
+**Client**: React
 
-To run any automated tests, run `npm test`. This will: 
-* Run all the client-side tests: `npm test --prefix client`
-* Run all the server-side tests: `npm test --prefix server` 
+**Server**: NodeJS, Express, MongoDB
